@@ -13,7 +13,7 @@ import numpy as np
 # Constantes
 ## Situación del acelerador
 ## Output
-_D_actual = 1.017
+_D_actual = 1.014
 ## Tasa de medida
 _UM_tasa = 600
 ## Reproducibilidad del acelerador [unidades relativas]
@@ -93,11 +93,11 @@ def lectura_medida_f(UM, n=1, trials=1, D_actual=_D_actual, NDwQ0=_NDwQ0, kQ=_kQ
         lectura_medida = D_actual * UM / 100 / NDwQ0 / kQ / ϕpT * _rng.normal(1, _acelerador_rel_std, (trials, n))
     return lectura_medida
 
-def dosis_f(lecturas, UM, ϕpT, fugas, NDwQ0, kQ):
+def dosis_f(lecturas, UM, ϕpT, fugas, NDwQ0=_NDwQ0, kQ=_kQ):
     D = (lecturas - fugas * UM/_UM_tasa) * ϕpT * NDwQ0 * kQ 
     return D
 
-def output_f(lecturas, UM, ϕpT, fugas, NDwQ0, kQ):
+def output_f(lecturas, UM, ϕpT, fugas, NDwQ0=_NDwQ0, kQ=_kQ):
     D = (lecturas - fugas * UM/_UM_tasa) * ϕpT * NDwQ0 * kQ 
     output = D / UM * 100
     return output
