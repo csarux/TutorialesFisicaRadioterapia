@@ -31,7 +31,7 @@ _resolucion_barometro = 1
 
 ## Situación del acelerador
 ### Output
-_D_actual = 1.014
+_D_actual = 1.016
 ### Tasa de medida
 _UM_tasa = 600
 ### Reproducibilidad del acelerador [unidades relativas]
