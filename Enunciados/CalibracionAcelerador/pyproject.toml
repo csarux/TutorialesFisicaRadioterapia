@@ -1,0 +1,20 @@
+# contents of pyproject.toml
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "simcaliblinac"
+version = "0.1.0"
+
+authors = [
+  { name="César Rodríguez", email="cesaro02@ucm.es" },
+]
+description = "Calibración de un acelerador lineal. Simulación y análisis"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
