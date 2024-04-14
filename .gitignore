@@ -278,6 +278,9 @@ TSWLatexianTemp*
 # Jupyter checkpoint
 .ipynb_checkpoints
 
+# Módulo LegPy en el entregable de Braqui
+Enunciados/FuenteBraquiterapia/LegPy/
+ 
 # Trabajo de los alumnos por curso
 Correcciones2024
 simcaliblinac.cpython-39.pyc
